@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es"> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="../node_modules/angular/angular.min.js"></script>
+        <script src="./app.js"></script>
+    </head>
+    <body ng-app="appModule" ng-controller="AppController as vm">
+        <header>
+            <h1> HOLA MUNDO </h1>
+        </header>
+        <article>
+            <p>
+                <label for="name">Di tu nombre: </label>
+                <input i="name" type="text" ng-model="vm.name">
+
+            </p>
+            <p>
+                <button ng-click="vm.btnBorrar()">Borrar</button>
+            </p>
+            <p>
+               {{vm.name}} está realizando el curso de {{vm.curso}}
+            </p>
+        </article>
+      <footer>
+          <p>Curso de {{vm.curso}}</p>
+      </footer>
+
+    </body>
+</html>

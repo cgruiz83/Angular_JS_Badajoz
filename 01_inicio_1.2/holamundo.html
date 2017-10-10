@@ -6,28 +6,28 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!--script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"-->
         <script src="../node_modules/angular/angular.min.js"></script>
+        <script src="./app.js"></script>
     </head>
-    <body ng-app ng-init="name='Pepe'; curso='AngularJS'">
+    <body ng-app="appModule" ng-controller="AppController as vm">
         <header>
             <h1> HOLA MUNDO </h1>
         </header>
         <article>
             <p>
                 <label for="name">Di tu nombre: </label>
-                <input i="name" type="text" ng-model="name">
+                <input i="name" type="text" ng-model="vm.name">
 
             </p>
             <p>
-                <button ng-click="name = '';">Borrar</button>
+                <button ng-click="vm.btnBorrar()">Borrar</button>
             </p>
             <p>
-                {{name}} está realizando el curso de {{curso}}
+               {{vm.name}} está realizando el curso de {{vm.curso}}
             </p>
         </article>
       <footer>
-          <p>Curso de {{curso}}</p>
+          <p>Curso de {{vm.curso}}</p>
       </footer>
 
     </body>
