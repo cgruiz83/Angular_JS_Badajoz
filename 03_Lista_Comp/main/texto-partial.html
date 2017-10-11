@@ -1,0 +1,18 @@
+<p>
+    Titular de noticia 
+    <br/>
+    <span class="destacado pointer" ng-click="$ctrl.verTexto = !$ctrl.verTexto">
+    {{$ctrl.verTexto ? 'Ver Menos' : 'Ver Más'}}
+    </span> 
+    <br/>
+    <span ng-show="$ctrl.verTexto">
+    <!--<span ng-mouseover="$ctrl.verTexto">-->
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis lectus justo. 
+    Suspendisse efficitur finibus urna, nec semper mauris malesuada eget. Mauris ac ante mollis, 
+    vestibulum sapien in, pellentesque erat. Ut volutpat erat metus, a consequat tortor laoreet vel. 
+    Mauris ornare vulputate molestie. Sed vulputate sodales turpis quis efficitur. 
+    Ut a pharetra diam, quis tempus urna. Fusce quis laoreet purus, at pharetra nibh. 
+    Aliquam bibendum semper nisl, non dignissim quam rhoncus ut.
+</span>
+</p>
+<h4>{{$ctrl.sCurso}}</h4>  

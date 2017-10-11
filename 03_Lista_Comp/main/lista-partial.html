@@ -1,0 +1,20 @@
+<article>
+  <form name="formulario">
+ 
+        <label id="lblIdea" for="idea">Dinos una idea: </label>
+        <input id="idea" type="text" ng-model="$ctrl.nuevaIdea">  
+        <label></label>
+        <input type="button" id="boton" ng-click="$ctrl.btnAdd()" value="Añadir"/>
+ 
+  </form>
+  <div ng-if="$ctrl.listaIdeas.length > 0">    
+    <h2>
+        Lista de ideas:
+    </h2>
+    <ul>
+        <li ng-repeat="idea in $ctrl.listaIdeas track by $index">
+            {{idea}}
+        </li>
+    </ul>
+</div>
+</article>
